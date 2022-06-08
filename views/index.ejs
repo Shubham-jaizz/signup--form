@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/public/css/style.css" />
+    <title>file upload</title>
+  </head>
+  <body>
+    <main class="admin">
+      <h2>SignUp Form</h2>
+      <div class="admin__upload-file">
+        <form action="/api/uploadFile" enctype="multipart/form-data" method="post">
+             <label for="name">Name</label>
+            <input type="text" class="admin__input" id="myFile" name="myFile" placeholder="Name" required />
+              <br>
+            <label for="email">Email</label>
+            <input type="text" class="admin__input" id="myFile" name="myFile" placeholder="Email" required />
+              <br>
+            <label for="mobile">Mobile</label>
+            <input type="text" class="admin__input" id="myFile" name="myFile" placeholder="Mobile" required />
+              <br>
+            <label for="password">Password</label>
+            <input type="text" class="admin__input" id="myFile" name="myFile" placeholder="Password" required />
+                
+            <label for="image">passport size image</label>
+            <input type="file" class="admin__input" id="myFile" name="myFile" />
+          <br>
+          <hr>
+        </div>
+          <input class="admin__submit" type="submit" />
+          
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
